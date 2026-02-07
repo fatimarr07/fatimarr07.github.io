@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fátima Román</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <!-- Cursor personalizado -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+    
+    <!-- Canvas para partículas interactivas -->
+    <canvas id="particleCanvas"></canvas>
+
+    <header class="hero">
+        <div class="hero-inner">
+            <div class="hero-left">
+                <h1 class="fade-in" data-translate="name">Fátima Román</h1>
+                <p class="lead fade-in-delay-1" data-translate="subtitle">Estudiante de Desarrollo de Aplicaciones Multiplataforma</p>
+                <p class="cta-row fade-in-delay-2">
+                    <a class="btn primary" href="#contact" data-translate="btn-contact">Contactar</a>
+                    <a class="btn ghost" href="#projects" data-translate="btn-projects">Ver Proyectos</a>
+                </p>
+            </div>
+            <div class="hero-right fade-in-delay-2">
+                <div class="blobs" aria-hidden="true">
+                    <svg width="480" height="320" viewBox="0 0 480 320" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <linearGradient id="g1" x1="0" x2="1">
+                                <stop offset="0" stop-color="var(--accent)" stop-opacity="0.9" />
+                                <stop offset="1" stop-color="var(--accent-2)" stop-opacity="0.9" />
+                            </linearGradient>
+                        </defs>
+                        <g filter="url(#f)">
+                            <circle cx="120" cy="120" r="100" fill="url(#g1)"/>
+                            <circle cx="320" cy="80" r="70" fill="var(--accent-2)" opacity="0.85"/>
+                        </g>
+                        <defs>
+                          <filter id="f" x="-50" y="-50" width="600" height="420" filterUnits="userSpaceOnUse">
+                            <feGaussianBlur stdDeviation="20"/>
+                          </filter>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="nav-links">
+            <a href="#projects" data-translate="nav-projects">Proyectos</a>
+            <a href="#stack" data-translate="nav-technologies">Tecnologías</a>
+            <a href="#experience" data-translate="nav-experience">Experiencia</a>
+            <a href="#contact" data-translate="nav-contact">Contacto</a>
+        </div>
+        <div class="nav-controls">
+            <button id="language-toggle" aria-label="Cambiar idioma">
+                <span class="flag-icon">🇪🇸</span>
+            </button>
+            <button id="theme-toggle" aria-label="Alternar tema">
+                <span class="theme-icon">🌙</span>
+            </button>
+        </div>
+    </nav>
+
+    <section id="projects" class="scroll-fade">
+        <h2 data-translate="section-projects">Proyectos</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">
+                    <div class="project-image-placeholder">⚙️</div>
+                </div>
+                <div class="project-card-content">
+                    <h3 data-translate="project1-title">Automatización de Sistemas</h3>
+                    <p data-translate="project1-desc">Creación de scripts para automatización de tareas en entornos Linux y Windows, optimizando procesos y reduciendo tiempos de administración del sistema.</p>
+                    <div class="project-tags">
+                        <span class="tag">Bash</span>
+                        <span class="tag">PowerShell</span>
+                        <span class="tag">Python</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="#" class="project-btn secondary">
+                            <span class="btn-icon">💻</span>
+                            <span data-translate="view-code">View Code</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-image">
+                    <div class="project-image-placeholder">🌐</div>
+                </div>
+                <div class="project-card-content">
+                    <h3 data-translate="project2-title">Infraestructura de Redes</h3>
+                    <p data-translate="project2-desc">Implementación de firewalls, routers y antenas. Configuración de redes TCP/IP y medidas de ciberseguridad para protección de sistemas.</p>
+                    <div class="project-tags">
+                        <span class="tag">Firewalls</span>
+                        <span class="tag">TCP/IP</span>
+                        <span class="tag">Routers</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="#" class="project-btn secondary">
+                            <span class="btn-icon">💻</span>
+                            <span data-translate="view-code">View Code</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-image">
+                    <div class="project-image-placeholder">🗄️</div>
+                </div>
+                <div class="project-card-content">
+                    <h3 data-translate="project3-title">Gestión de Bases de Datos</h3>
+                    <p data-translate="project3-desc">Diseño y administración de bases de datos relacionales con SQL Server y T-SQL, incluyendo consultas complejas y optimización de rendimiento.</p>
+                    <div class="project-tags">
+                        <span class="tag">SQL Server</span>
+                        <span class="tag">T-SQL</span>
+                        <span class="tag">SQLite</span>
+                    </div>
+                    <div class="project-actions">
+                        <a href="#" class="project-btn secondary">
+                            <span class="btn-icon">💻</span>
+                            <span data-translate="view-code">View Code</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="stack" class="scroll-fade">
+  <h2>Tecnologías</h2>
+
+  <div class="tech-container">
+
+    <div class="tech-level">
+      <div class="stack">
+        <div class="badge">
+            <span><h3>Java</h3></span>
+            <p>Medium</p>
+        </div>
+        <div class="badge">
+            <span><h3>SQL Server</h3></span>
+            <p>Medium</p>
+        </div>
+         <div class="badge">
+            <span><h3>T-SQL</h3></span>
+            <p>Basic</p>
+        </div>
+         <div class="badge">
+            <span><h3>HTML</h3></span>
+            <p>Medium</p>
+        </div>
+         <div class="badge">
+            <span><h3>CSS</h3></span>
+            <p>Medium</p>
+         </div>
+         <div class="badge">
+            <span><h3>JavaScript</h3></span>
+            <p>Medium</p>
+        </div>
+        <div class="badge">
+            <span><h3>Python</h3></span>
+            <p>Medium</p>
+        </div>
+        <div class="badge">
+            <span><h3>Git/GitHub</h3></span>
+            <p>Medium</p>
+        </div>
+            <div class="badge">
+                <span><h3>Linux</h3></span>
+                <p>Basic</p>
+            </div>
+             <div class="badge">
+                <span><h3>Windows Server</h3></span>
+                <p>Basic</p>
+             </div>
+                <div class="badge">
+                    <span><h3>IntelliJ</h3></span>
+                    <p>Basic</p>
+                </div>
+                    <div class="badge">
+                        <span><h3>Eclipse</h3></span>
+                        <p>Medium</p>
+                    </div>
+                         <div class="badge">
+                            <span><h3>VSCode</h3></span>
+                            <p>Medium</p>
+                         </div>
+        </div>
+    
+    </div>
+
+  </div>
+</section>
+
+    <section id="experience" class="scroll-fade">
+        <h2 data-translate="section-experience">Experiencia</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-icon">💻</div>
+                <div class="timeline-content">
+                    <div class="timeline-header">
+                        <h3 data-translate="exp1-title">Técnico Informático</h3>
+                        <span class="timeline-date" data-translate="exp1-date">2024 - 2025</span>
+                    </div>
+                    <h4 class="timeline-company" data-translate="exp1-company">Instituto Hispalense de Pediatría</h4>
+                    <ul class="timeline-tasks">
+                        <li data-translate="exp1-task1">Configuración y mantenimiento de servidores con virtualización</li>
+                        <li data-translate="exp1-task2">Gestión de bases de datos para seguimiento de equipos informáticos</li>
+                        <li data-translate="exp1-task3">Implementación de firewalls, routers y antenas</li>
+                        <li data-translate="exp1-task4">Creación de scripts para automatización en Linux y Windows</li>
+                    </ul>
+                    <p class="timeline-badge" data-translate="exp1-hours">✓ 800 horas de prácticas formativas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="scroll-fade">
+        <h2 data-translate="section-contact">Contacto</h2>
+        <div class="contact-grid">
+            <div class="contact-item">
+                <span class="contact-icon">📧</span>
+                <div>
+                    <strong data-translate="contact-email">Email</strong>
+                    <a href="/cdn-cgi/l/email-protection#670106130e0a064915080a0609270e0214090215110e0809490214"><span class="__cf_email__" data-cfemail="89efe8fde0e4e8a7fbe6e4e8e7c9e0ecfae7ecfbffe0e6e7a7ecfa">[email&#160;protected]</span></a>
+                </div>
+            </div>
+            <div class="contact-item">
+                <span class="contact-icon">📱</span>
+                <div>
+                    <strong data-translate="contact-phone">Teléfono</strong>
+                    <a href="tel:+34624264192">624 264 192</a>
+                </div>
+            </div>
+            <div class="contact-item">
+                <span class="contact-icon">📍</span>
+                <div>
+                    <strong data-translate="contact-location">Ubicación</strong>
+                    <span>Sevilla, 41005</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="CSS/Script.js"></script>
+
+    <footer>
+        <p>&copy; 2026 Fátima Román. <span data-translate="footer-rights">Todos los derechos reservados.</span></p>     
+    </footer>
