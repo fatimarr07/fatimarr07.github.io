@@ -1,4 +1,3 @@
-
 // Script.js - Funcionalidades interactivas para el portafolio de Fátima Romá
 // ========== TRADUCCIONES ==========
 const translations = {
@@ -345,14 +344,14 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// ========== PARALLAX EN HEADER ==========
+// ========== NAV EMPUJA HEADER ==========
 window.addEventListener('scroll', () => {
     const scrolled = window.pageYOffset;
     const hero = document.querySelector('.hero');
     
-    if (hero && scrolled < hero.offsetHeight) {
-        hero.style.transform = `translateY(${scrolled * 0.5}px)`;
-        hero.style.opacity = 1 - scrolled / hero.offsetHeight;
+    if (hero) {
+        // El header se desvanece mientras baja
+        hero.style.opacity = Math.max(0, 1 - scrolled / hero.offsetHeight);
     }
 });
 

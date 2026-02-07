@@ -14,39 +14,30 @@
     <!-- Canvas para partículas interactivas -->
     <canvas id="particleCanvas"></canvas>
 
-    <header class="hero">
-        <div class="hero-inner">
-            <div class="hero-left">
-                <h1 class="fade-in" data-translate="name">Fátima Román</h1>
-                <p class="lead fade-in-delay-1" data-translate="subtitle">Estudiante de Desarrollo de Aplicaciones Multiplataforma</p>
-                <p class="cta-row fade-in-delay-2">
-                    <a class="btn primary" href="#contact" data-translate="btn-contact">Contactar</a>
-                    <a class="btn ghost" href="#projects" data-translate="btn-projects">Ver Proyectos</a>
-                </p>
-            </div>
-            <div class="hero-right fade-in-delay-2">
-                <div class="blobs" aria-hidden="true">
-                    <svg width="480" height="320" viewBox="0 0 480 320" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <defs>
-                            <linearGradient id="g1" x1="0" x2="1">
-                                <stop offset="0" stop-color="var(--accent)" stop-opacity="0.9" />
-                                <stop offset="1" stop-color="var(--accent-2)" stop-opacity="0.9" />
-                            </linearGradient>
-                        </defs>
-                        <g filter="url(#f)">
-                            <circle cx="120" cy="120" r="100" fill="url(#g1)"/>
-                            <circle cx="320" cy="80" r="70" fill="var(--accent-2)" opacity="0.85"/>
-                        </g>
-                        <defs>
-                          <filter id="f" x="-50" y="-50" width="600" height="420" filterUnits="userSpaceOnUse">
-                            <feGaussianBlur stdDeviation="20"/>
-                          </filter>
-                        </defs>
-                    </svg>
-                </div>
-            </div>
-        </div>
-    </header>
+<header class="hero">
+  <div class="hero-inner">
+    <div class="hero-left">
+      <h1 class="fade-in" data-translate="name">Fátima Román</h1>
+      <p class="lead fade-in-delay-1" data-translate="subtitle">
+        Estudiante de Desarrollo de Aplicaciones Multiplataforma
+      </p>
+      <p class="cta-row fade-in-delay-2">
+        <a class="btn primary" href="#contact" data-translate="btn-contact">Contactar</a>
+        <a class="btn ghost" href="#projects" data-translate="btn-projects">Ver Proyectos</a>
+      </p>
+    </div>
+    <div class="hero-right fade-in-delay-2">
+      <div class="spline-container">
+        <spline-viewer 
+          url="https://prod.spline.design/gn3XC4u7K9GXvDtw/scene.splinecode">
+        </spline-viewer>
+      </div>
+    </div>
+  </div>
+</header>
+
+<script type="module" src="https://unpkg.com/@splinetool/viewer@1.12.51/build/spline-viewer.js"></script>
+
 
     <nav>
         <div class="nav-links">
@@ -246,10 +237,12 @@
                     <span>Sevilla, 41005</span>
                 </div>
             </div>
-        </div>
     </section>
+    
     <script src="CSS/Script.js"></script>
 
     <footer>
         <p></p>     
     </footer>
+</body>
+</html>
