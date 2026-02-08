@@ -1,4 +1,4 @@
-// Script.js - Funcionalidades interactivas para el portafolio de Fátima Romá
+// Script.js - Funcionalidades interactivas para el portafolio de Fátima Román
 // ========== TRADUCCIONES ==========
 const translations = {
     es: {
@@ -11,6 +11,7 @@ const translations = {
         'nav-projects': 'Proyectos',
         'nav-technologies': 'Tecnologías',
         'nav-experience': 'Experiencia',
+        'nav-education': 'Estudios',
         'nav-contact': 'Contacto',
         
         'section-projects': 'Proyectos',
@@ -38,6 +39,14 @@ const translations = {
         'exp1-task4': 'Creación de scripts para automatización en Linux y Windows',
         'exp1-hours': '✓ 800 horas de prácticas formativas',
         
+        'section-education': 'Estudios',
+        'edu1-title': 'Desarrollo de Aplicaciones Multiplataforma',
+        'edu1-date': '2025 - Actualidad',
+        'edu1-institution': 'IES Nervión',
+        'edu2-title': 'Técnico en Sistemas Microinformáticos y Redes',
+        'edu2-date': '2023 - 2025',
+        'edu2-institution': 'ADA ITS',
+        
         'section-contact': 'Contacto',
         'contact-email': 'Email',
         'contact-phone': 'Teléfono',
@@ -55,6 +64,7 @@ const translations = {
         'nav-projects': 'Projects',
         'nav-technologies': 'Technologies',
         'nav-experience': 'Experience',
+        'nav-education': 'Education',
         'nav-contact': 'Contact',
         
         'section-projects': 'Projects',
@@ -81,6 +91,14 @@ const translations = {
         'exp1-task3': 'Implementation of firewalls, routers and antennas',
         'exp1-task4': 'Creation of automation scripts on Linux and Windows',
         'exp1-hours': '✓ 800 hours of training internship',
+        
+        'section-education': 'Education',
+        'edu1-title': 'Multiplatform Application Development',
+        'edu1-date': '2025 - Present',
+        'edu1-institution': 'IES Nervión',
+        'edu2-title': 'Technician in Microcomputer Systems and Networks',
+        'edu2-date': '2023 - 2025',
+        'edu2-institution': 'ADA ITS',
         
         'section-contact': 'Contact',
         'contact-email': 'Email',
